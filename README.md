@@ -5,8 +5,9 @@
 
 # Usage
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
-`렉딜레이`는 맵이 로드되는 딜레이 입니다. 컴사양에따라 바뀔 수 있습니다.
-`창작마당`을 활성화하면 창작마당 맵을 검색하실 수 있습니다.
+`렉딜레이`는 맵이 로드되는 딜레이 입니다. 컴사양에따라 바뀔 수 있습니다.   
+`창작마당`을 활성화하면 창작마당 맵을 검색하실 수 있습니다.    
+![메인2](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main2.png?raw=true)    
 
 
 # Warning
