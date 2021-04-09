@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nobrain.auto.manager.Controller">
+   <children>
+      <Pane prefHeight="450.0" prefWidth="709.0">
+         <children>
+            <Button fx:id="button" layoutX="26.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onButtonClick" text="파일 열기" />
+            <Label fx:id="label" layoutX="105.0" layoutY="27.0" text="파일 선택되지 않음" />
+            <TextField fx:id="lag" layoutX="26.0" layoutY="56.0" prefHeight="25.0" prefWidth="61.0" promptText="렉딜레이" />
+            <TextField fx:id="name" layoutX="25.0" layoutY="25.0" prefHeight="25.0" prefWidth="138.0" promptText="창작마당시 맵 이름" visible="false" />
+            <CheckBox fx:id="workshop" layoutX="93.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#onDragClick" text="창작모드" />
+            <Label fx:id="on" layoutX="173.0" layoutY="60.0" text="작동중!!" textFill="RED" visible="false">
+               <effect>
+                  <Bloom threshold="1.0" />
+               </effect>
+               <font>
+                  <Font name="Calibri Bold Italic" size="12.0" />
+               </font></Label>
+            <Button fx:id="any" layoutX="170.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#onApply" prefHeight="25.0" prefWidth="44.0" text="분석" visible="false" />
+
+         </children></Pane>
+   </children>
+</AnchorPane>
