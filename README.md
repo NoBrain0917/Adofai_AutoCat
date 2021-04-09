@@ -1,5 +1,5 @@
 # Adofai AutoCat (Macro)
-![플레이](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/play2.gif?raw=true)       
+![플레이](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/play.gif?raw=true)       
 얼불춤을 토끼가 아닌 고양이가 대신 쳐줍니다.    
 사용하고 싶으면 직접 빌드해서 쓰세요.
 
@@ -18,7 +18,7 @@
 `렉딜레이`는 맵이 로드되는 딜레이 입니다. 컴사양에따라 바뀔 수 있습니다.   
 `창작모드`을 활성화하면 창작마당 맵을 검색하실 수 있습니다.    
 `Insert`키를 누르면 토끼 대신 고양이가 치기 시작합니다.     
-다시 끌려면 `Insert`키를 한번 더 눌러주세요.         
+끌려면 `Insert`키를 한번 더 눌러주세요.         
 
 
 # Warning
