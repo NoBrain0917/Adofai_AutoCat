@@ -4,7 +4,7 @@
 사용하고 싶으면 직접 빌드해서 쓰세요.
 
 # Usage
-![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)
+![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
 `렉딜레이`는 맵이 로드되는 딜레이 입니다. 컴사양에따라 바뀔 수 있습니다.
 
 
