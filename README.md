@@ -4,7 +4,7 @@
 사용하고 싶으면 직접 빌드해서 쓰세요.
 
 # Usage
-![메인](
+![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)
 
 
 # Warning
