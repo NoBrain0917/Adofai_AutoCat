@@ -6,7 +6,7 @@
 # Usage
 ## 기본
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
-`파일 열기`를 눌러 파일을 선택할 수 있습니다.
+`파일 열기`를 눌러 파일을 선택할 수 있습니다.    
 
 ## 창작마당
 ![메인2](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main2.png?raw=true)     
