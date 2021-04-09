@@ -3,8 +3,8 @@
 얼불춤을 토끼가 아닌 고양이가 대신 쳐줍니다.    
 사용하고 싶으면 직접 빌드해서 쓰세요.
 
-# Basics 
-## Default
+# Usage
+## Basics
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
 `파일 열기`를 눌러 파일을 선택할 수 있습니다.    
 
