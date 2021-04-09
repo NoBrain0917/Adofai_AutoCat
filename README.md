@@ -3,12 +3,12 @@
 얼불춤을 토끼가 아닌 고양이가 대신 쳐줍니다.    
 사용하고 싶으면 직접 빌드해서 쓰세요.
 
-# Usage
-## 기본
+# Basics 
+## Default
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
 `파일 열기`를 눌러 파일을 선택할 수 있습니다.    
 
-## 창작마당
+## Steam CustomMap
 ![메인2](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main2.png?raw=true)     
 창작마당에 있는 맵의 이름을 검색하시고 `엔터` 또는 `분석`을 누르시면 맵이 분석됩니다.           
      
