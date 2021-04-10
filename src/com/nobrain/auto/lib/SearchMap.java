@@ -43,7 +43,7 @@ public class SearchMap {
     }
 
     private String getDrive(){
-        File c = new File("C:/Program Files (x86)/Steam/steamapps/workshop/977950/");
+        File c = new File("C:/Program Files (x86)/Steam/steamapps/workshop/content/977950/");
         File d = new File("D:/SteamLibrary/steamapps/workshop/content/977950/");
         File e = new File("E:/SteamLibrary/steamapps/workshop/content/977950/");
 
