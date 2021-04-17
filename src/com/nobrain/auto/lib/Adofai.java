@@ -81,13 +81,13 @@ public class Adofai {
 
         PressInfo pressInfo = new PressInfo(originalNum+(long)lagDelay*1000000);
 
+
         delays.set(0,pressInfo);
         thread = new Thread(() -> {
             Iterator<PressInfo> pressInterator = delays.iterator();
 
             long prevTime = System.nanoTime();
             long nowTime;
-            int asdf = 0;
 
             PressInfo press = pressInterator.next();
 
