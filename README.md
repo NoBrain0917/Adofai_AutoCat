@@ -9,7 +9,7 @@
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
 `파일 열기`를 눌러 파일을 선택할 수 있습니다.    
 
-## Steam CustomMap
+## Steam Workshop
 ![메인2](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main2.png?raw=true)     
 창작마당에 있는 맵의 이름을 검색하시고 `엔터` 또는 `분석`을 누르시면 맵이 분석됩니다.           
      
