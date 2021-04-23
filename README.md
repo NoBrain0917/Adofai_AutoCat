@@ -5,7 +5,7 @@
 **※ 빌드 질문 안받습니다 모르겠으면 배우거나 쓰지마세요.**
 
 # Usage
-## Basics
+## Level Editor
 ![메인](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/main.png?raw=true)    
 `파일 열기`를 눌러 파일을 선택할 수 있습니다.    
 
