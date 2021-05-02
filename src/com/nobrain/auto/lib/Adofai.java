@@ -86,8 +86,8 @@ public class Adofai {
         thread = new Thread(() -> {
             Iterator<PressInfo> pressInterator = delays.iterator();
 
-            long prevTime = System.nanoTime();
-            long nowTime;
+            long nowTime, prevTime = System.nanoTime();
+            int prev = 0, now, delay = 55;
 
             PressInfo press = pressInterator.next();
 
@@ -97,6 +97,7 @@ public class Adofai {
 
                 if (nowTime - prevTime >= press.delay) {
                     prevTime += press.delay;
+                    delay = 55;
 
                     if (pressInterator.hasNext()) {
                         press = pressInterator.next();
@@ -106,22 +107,31 @@ public class Adofai {
                     }
 
 
-                    Timer timer = new Timer();
                     PressInfo finalPress = press;
+                    now = (int)(finalPress.delay/1000000);
+
+                    robot.keyPress(finalPress.key);
+
+                    if(now<55&&prev<55) {
+                        delay = now-5;
+                        if(delay<0) delay = 0;
+                    }
 
                     try {
-                        robot.keyPress(finalPress.key);
+                        Timer timer = new Timer();
                         TimerTask timerTask = new TimerTask() {
-                            @Override
-                            public void run() {
-                                robot.keyRelease(finalPress.key);
+                                @Override
+                                public void run() { robot.keyRelease(finalPress.key);
                                 timer.cancel();
                                 timer.purge();
-                            }
-                        };
-                        timer.schedule(timerTask, 30);
-                    } catch (Exception e) {}
+                                }
+                            };
+                        timer.schedule(timerTask, delay);
+                    } catch (Exception e) {
+                    }
 
+
+                    prev = (int)(finalPress.delay/1000000);
                 }
             }
             thread.interrupt();
