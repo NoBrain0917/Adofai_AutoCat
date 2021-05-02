@@ -17,6 +17,7 @@ public class Controller implements Initializable {
 
     public static Adofai adofai = null;
     private Stage primaryStage;
+    private String defaultPath = null;
 
 
 
@@ -62,26 +63,28 @@ public class Controller implements Initializable {
     @FXML public void onButtonClick(){
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("얼불춤 파일", "*.adofai","*.ADOFAI"));
+        fileChooser.setTitle("파일 선택");
+        if(defaultPath!=null) {
+            fileChooser.setInitialDirectory(new File(defaultPath));
+        }
         File file = fileChooser.showOpenDialog(primaryStage);
 
-        if(file==null) {
-            label.setText("파일 선택되지 않음");
-            adofai = null;
-            return;
-        }
-        label.setText("파일 선택됨 - "+file.getName());
+        if(file!=null) {
+            label.setText("파일 선택됨 - " + file.getName());
+            defaultPath = file.getAbsolutePath().replace(file.getName(),"");
 
-        try {
-            adofai = new Adofai(file.getAbsolutePath(),lag,name,on,workshop);
-        } catch (ParseException e) {
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setTitle("오류");
-            System.out.println(e.toString());
-            alert.setHeaderText(e.toString());
-            alert.setContentText("맵을 분석할 수가 없습니다.");
-            alert.showAndWait();
-            adofai = null;
-            label.setText("파싱 오류 - "+file.getName());
+            try {
+                adofai = new Adofai(file.getAbsolutePath(), lag, name, on, workshop);
+            } catch (ParseException e) {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("오류");
+                System.out.println(e.toString());
+                alert.setHeaderText(e.toString());
+                alert.setContentText("맵을 분석할 수가 없습니다.");
+                alert.showAndWait();
+                adofai = null;
+                label.setText("파싱 오류 - " + file.getName());
+            }
         }
     }
 
