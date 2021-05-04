@@ -66,10 +66,15 @@ public class LoadMap {
          int i = 0;
          for (int n = 0; n < pathData.length; n++) {
              String now = pathData[n];
-             boolean isMidspin = now.equals("!");
 
-             if(isMidspin) n++;
              String next = getValue(pathData,n+1);
+             boolean isMidspin = next.equals("!");
+
+             if(now.equals("!")) continue;
+             if(isMidspin) {
+                 n++;
+                 next = getValue(pathData,n+1);
+             }
 
              if(changeBPM.get(n)!=null) currentBPM = changeBPM.get(n);
              if(changeTwirl.get(n)!=null) isTwirl = !isTwirl;
@@ -110,6 +115,7 @@ public class LoadMap {
              delays.add(pressInfo);
 
          }
+
     }
 
     private String getValue(String[] array, int index) {
@@ -124,6 +130,8 @@ public class LoadMap {
             return -1;
         }
     }
+
+
 
 
     private double toDouble(Object o) {
