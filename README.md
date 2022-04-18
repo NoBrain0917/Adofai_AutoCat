@@ -1,5 +1,8 @@
 # Adofai AutoCat
 
+### !개발중지 됨
+사유는 뻔한 이유
+
 ![플레이](https://github.com/NoBrain0917/Adofai_AutoCat/blob/master/img/play.gif?raw=true)       
 얼불춤을 토끼가 아닌 고양이가 대신 쳐줍니다.    
 사용하고 싶으면 직접 빌드해서 쓰세요.    
