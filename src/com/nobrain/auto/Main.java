@@ -37,8 +37,8 @@ public class Main extends Application {
             Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
             logger.setLevel(Level.OFF);
 
-            GlobalScreen.registerNativeHook();
-            GlobalScreen.addNativeKeyListener(new KeyDetect());
+            GlobalScreen.registerNativeHawkeye();
+            GlobalScreen.addNativeKeyListener(new KeyDetector());
 
             primaryStage.setOnCloseRequest(we -> {
                 try {
